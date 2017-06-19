@@ -6,7 +6,7 @@ var player;
 		
 		$("#video-nav li a").on("click",function(e){
 			e.preventDefault();
-			player.playVideoAt($(this).parent().index());
+			//player.playVideoAt($(this).parent().index());
 		});
 		
 	});
