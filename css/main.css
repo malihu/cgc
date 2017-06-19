@@ -131,8 +131,11 @@ body{ background: #000; color: #fff; font-family: 'Roboto', sans-serif; font-wei
 #content{
 	float: left;
 	max-width: 25%;
-	padding: 20px;
 	margin: 20px;
+}
+
+#header, #blog{
+	padding: 20px;
 	background: rgba(0,0,0,.6);
 }
 
@@ -156,7 +159,9 @@ body{ background: #000; color: #fff; font-family: 'Roboto', sans-serif; font-wei
 	opacity: 1;
 }
 
-
+#blog{
+	margin-top: 100vh;
+}
 
 
 
