@@ -6,7 +6,7 @@ var player;
 		
 		$("#video-nav li a").on("click",function(e){
 			e.preventDefault();
-			//player.playVideoAt($(this).parent().index());
+			player.playVideoAt($(this).parent().index());
 		});
 		
 	});
@@ -16,7 +16,7 @@ var player;
 function onYouTubeIframeAPIReady() {
 	//console.log( YT.loaded );
 	var checkYT = setInterval(function () {
-		console.log( "L: "+YT.loaded );
+		console.log( "YT api loaded: "+YT.loaded );
     	if(YT.loaded){
 			player = new YT.Player('video-player', {
 				width: 600,
