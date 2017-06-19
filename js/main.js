@@ -14,6 +14,7 @@ var player;
 })(jQuery);
 
 function onYouTubeIframeAPIReady() {
+	console.log( YT.loaded );
 	player = new YT.Player('video-player', {
 		width: 600,
 		height: 400,
