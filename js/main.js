@@ -40,7 +40,7 @@ var player,playerReady,videoList,videos,player1stVideo,player1stVideoList,restAP
 									return value!=val;
 								});
 							//console.log(videoList_i);
-							videoListMarkup +="<li><a href='https://www.youtube.com/embed/"+val+"?enablejsapi=1&amp;playlist="+videoList_i.join(",")+"&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1' data-yt-video='"+val+"' target='video-player'><img src='https://img.youtube.com/vi/"+val+"/mqdefault.jpg' /></a></li>";
+							videoListMarkup +="<li><a href='https://www.youtube.com/embed/"+val+"?enablejsapi=1&amp;playlist="+videoList_i.join(",")+"&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1' data-yt-video='"+val+"' target='video-player'><img src='https://i.ytimg.com/vi/"+val+"/mqdefault.jpg' /></a></li>";
 							if(!player1stVideo){
 								player1stVideo=val;
 								player1stVideoList=videoList_i.join(",");
