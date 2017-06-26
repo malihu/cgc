@@ -14,7 +14,7 @@ var player,playerReady,videoList,videos,player1stVideo,player1stVideoList,restAP
 		
 		//rest api -----
 		$.ajax({
-			url:"https://cms.malihu.com/cgc/wp-json/wp/v2/pages", 
+			url:"http://cms.malihu.com/cgc/wp-json/wp/v2/pages", 
 			crossDomain:true,
 			type:"GET",
 			success:function(data){
