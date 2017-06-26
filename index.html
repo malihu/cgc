@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i&amp;subset=greek" rel="stylesheet">
+		<script src="https://use.fontawesome.com/ec06c23e52.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -25,69 +26,144 @@
 			<div id="video-player"></div>
 		</div>
 		
-		<nav id="video-nav">
-			<a href="#"><img src="images/cgc-logo.png" id="logo" /></a>
-			<ul>
+		<nav id="main-nav" class="fixedScrollable">
+			<!--<a href="#"><img src="images/cgc-logo.png" id="logo" /></a>-->
+			<a href="#" id="logo"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="158.105px" height="185.416px" viewBox="0 0 158.105 185.416" enable-background="new 0 0 158.105 185.416" xml:space="preserve"><g><g>
+			<path fill="#E32227" d="M157.344,140.354H0v2.955h157.344V140.354z M134.445,100.741V25.578L78.672,0L22.9,25.578v75.163
+			l55.772,25.578L134.445,100.741z M31.824,31.591l46.849-21.485l46.849,21.485v63.137l-46.849,21.485L31.824,94.728V31.591z
+			 M133.965,174.28c0,0.201,0.11,0.301,0.33,0.301h1.795c0.22,0,0.33-0.1,0.33-0.301v-22.394c0-0.2-0.11-0.301-0.33-0.301h-2.931
+			c-0.183,0-0.33,0.101-0.366,0.268c-0.257,0.836-0.696,1.838-1.099,2.641l-5.459,10.963c-0.402,0.902-0.77,1.871-1.063,2.707
+			c-0.109,0.334-0.402,0.334-0.513,0c-0.256-0.836-0.659-1.838-1.063-2.74l-5.422-10.93c-0.402-0.803-0.842-1.805-1.135-2.641
+			c-0.037-0.2-0.184-0.268-0.367-0.268h-2.894c-0.22,0-0.33,0.101-0.33,0.301v22.394c0,0.201,0.11,0.301,0.33,0.301h1.759
+			c0.22,0,0.329-0.1,0.329-0.301v-14.572c0-1.504-0.073-3.108-0.22-4.445c-0.036-0.401,0.293-0.535,0.439-0.101
+			c0.403,0.902,0.807,1.771,1.282,2.708l4.909,9.859c0.477,0.902,1.025,2.239,1.429,3.309c0.036,0.168,0.183,0.234,0.366,0.234
+			h1.722c0.184,0,0.33-0.066,0.366-0.234c0.403-1.069,0.953-2.373,1.393-3.309l4.981-9.894c0.44-0.902,0.843-1.771,1.209-2.674
+			c0.146-0.435,0.513-0.301,0.477,0.101c-0.184,1.337-0.257,2.941-0.257,4.445V174.28z M120.04,57.25l-8.495-3.324l-0.369,18.099
+			L90.492,62.79V32.503l21.423,9.603v3.324l8.125,3.324V35.088L80.888,16.99v52.079l39.151,17.729V57.25z M76.087,54.116l-8.9,4.271
+			v3.168l-20.648,9.729V41.129l20.648-9.729v3.159l8.9-4.271V16.98L36.936,35.178v51.62L76.087,68.6V54.116z M93.447,103.789
+			l-8.865-4.063l-4.063,1.478L60.205,91.6l18.098-8.126l20.315,9.234l-3.324,2.216l9.233,4.063L119.67,91.6L78.672,72.762
+			L37.674,91.6l40.998,18.836L93.447,103.789z M30.712,156.015c1.3,0,2.275,0.098,3.348,0.455l1.56,0.487
+			c0.26,0.098,0.455,0,0.52-0.26l1.333-3.575c0.097-0.26,0.032-0.423-0.26-0.521l-1.69-0.552c-1.69-0.521-3.023-0.748-4.811-0.748
+			c-6.533,0-10.498,4.583-10.498,11.896c0,7.281,3.965,11.863,10.498,11.863c1.983,0,3.186-0.162,4.843-0.683l0.39-0.13l3.023-0.942
+			c0.26-0.064,0.357-0.228,0.357-0.455v-10.758c0-0.26-0.163-0.423-0.423-0.423h-6.89c-0.228,0-0.39,0.13-0.455,0.357l-1.073,3.771
+			c-0.065,0.292,0.065,0.487,0.358,0.487h3.478v3.575l-0.357,0.098c-0.943,0.325-2.081,0.423-3.25,0.423
+			c-3.25,0-5.2-2.698-5.2-7.184C25.512,158.68,27.462,156.015,30.712,156.015z M96.125,151.585h-1.759
+			c-0.22,0-0.329,0.101-0.329,0.301v22.394c0,0.201,0.109,0.301,0.329,0.301h14.617c0.22,0,0.329-0.1,0.329-0.301v-1.403
+			c0-0.2-0.109-0.301-0.329-0.301H96.455v-20.689C96.455,151.686,96.344,151.585,96.125,151.585z M0,185.416h157.344v-2.955H0
+			V185.416z M10.885,156.015c1.495,0,2.438,0.13,3.38,0.423l1.528,0.487c0.26,0.098,0.422,0,0.52-0.26l1.17-3.673
+			c0.098-0.26,0-0.423-0.26-0.521l-1.495-0.487c-1.625-0.521-2.99-0.683-4.843-0.683c-6.533,0-10.53,4.583-10.53,11.863
+			c0,7.313,3.998,11.896,10.53,11.896c1.788,0,3.12-0.194,4.875-0.779l1.56-0.521c0.292-0.098,0.357-0.26,0.26-0.52l-1.3-3.543
+			c-0.065-0.26-0.26-0.357-0.52-0.26l-1.527,0.454c-1.17,0.391-2.146,0.488-3.348,0.488c-3.25,0-5.233-2.633-5.233-7.216
+			C5.652,158.648,7.635,156.015,10.885,156.015z M86.674,151.585c-0.221,0-0.33,0.101-0.33,0.301v22.394
+			c0,0.201,0.109,0.301,0.33,0.301h1.758c0.22,0,0.33-0.1,0.33-0.301v-22.394c0-0.2-0.11-0.301-0.33-0.301H86.674z M53.106,156.015
+			c1.495,0,2.438,0.13,3.38,0.423l1.528,0.487c0.26,0.098,0.422,0,0.52-0.26l1.17-3.673c0.098-0.26,0-0.423-0.26-0.521l-1.495-0.487
+			c-1.625-0.521-2.99-0.683-4.843-0.683c-6.533,0-10.531,4.583-10.531,11.863c0,7.313,3.998,11.896,10.531,11.896
+			c1.788,0,3.12-0.194,4.875-0.779l1.56-0.521c0.292-0.098,0.357-0.26,0.26-0.52l-1.3-3.543c-0.065-0.26-0.26-0.357-0.52-0.26
+			l-1.527,0.454c-1.17,0.391-2.145,0.488-3.348,0.488c-3.25,0-5.233-2.633-5.233-7.216
+			C47.874,158.648,49.856,156.015,53.106,156.015z M81.583,153.591c0.183,0,0.329-0.067,0.366-0.268l0.439-1.403
+			c0.073-0.201-0.037-0.335-0.293-0.335H66.344c-0.22,0-0.33,0.101-0.33,0.301v22.394c0,0.201,0.11,0.301,0.33,0.301h1.758
+			c0.22,0,0.33-0.1,0.33-0.301v-9.759h11.502c0.221,0,0.33-0.101,0.33-0.302v-1.403c0-0.2-0.109-0.301-0.33-0.301H68.432v-8.924
+			H81.583z M149.277,172.843c-2.564,0-4.359-0.435-6.118-1.003l-1.465-0.502c-0.184-0.066-0.33,0-0.403,0.201l-0.549,1.37
+			c-0.074,0.167,0,0.301,0.183,0.368l1.466,0.501c2.088,0.702,4.14,1.137,6.887,1.137c5.129,0,8.828-2.307,8.828-6.284
+			c0-3.041-2.088-4.612-5.531-5.782l-5.056-1.738c-3.187-1.069-3.956-2.506-3.956-4.044c0-2.306,2.198-3.743,5.495-3.743
+			c1.759,0,3.297,0.234,4.909,0.702l1.758,0.501c0.184,0.066,0.33,0,0.403-0.167l0.513-1.37c0.073-0.201,0-0.335-0.22-0.401
+			l-1.832-0.535c-1.868-0.534-3.626-0.835-5.531-0.835c-4.836,0-7.949,2.172-7.949,5.849c0,2.808,1.429,4.612,5.458,5.983
+			l5.092,1.737c2.088,0.735,3.957,1.872,3.957,3.844C155.615,171.338,152.72,172.843,149.277,172.843z"/>
+			</g></g></svg></a>
+			<ul id="site-nav">
+				<li><a href="#about">About</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<ul id="video-nav">
 				<!-- 
 				video list: To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss
 				-->
-				<li><a href="https://www.youtube.com/embed/To5oBOMAte8?enablejsapi=1&amp;playlist=0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="To5oBOMAte8" target="video-player"><img src="https://img.youtube.com/vi/To5oBOMAte8/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/0zsh2Qx2bbQ?enablejsapi=1&amp;playlist=To5oBOMAte8,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="0zsh2Qx2bbQ" target="video-player"><img src="https://img.youtube.com/vi/0zsh2Qx2bbQ/1.jpg" /></a></li>
-				<!--<li><a href="#" data-yt-video="O_jE6G2X5QE" target="video-player"></a></li>-->
-				<li><a href="https://www.youtube.com/embed/sAspme4mzfg?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="sAspme4mzfg" target="video-player"><img src="https://img.youtube.com/vi/sAspme4mzfg/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/Nln_ONLzehI?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="Nln_ONLzehI" target="video-player"><img src="https://img.youtube.com/vi/Nln_ONLzehI/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/TF_32PYY-RM?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="TF_32PYY-RM" target="video-player"><img src="https://img.youtube.com/vi/TF_32PYY-RM/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/1MgQ7K_1Fng?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="1MgQ7K_1Fng" target="video-player"><img src="https://img.youtube.com/vi/1MgQ7K_1Fng/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/W_lDC3VmgJs?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="W_lDC3VmgJs" target="video-player"><img src="https://img.youtube.com/vi/W_lDC3VmgJs/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/EFvLvmyv1iM?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="EFvLvmyv1iM" target="video-player"><img src="https://img.youtube.com/vi/EFvLvmyv1iM/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/ohSMsnz0Qe4?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="ohSMsnz0Qe4" target="video-player"><img src="https://img.youtube.com/vi/ohSMsnz0Qe4/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/RKFoT6dVRiA?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="RKFoT6dVRiA" target="video-player"><img src="https://img.youtube.com/vi/RKFoT6dVRiA/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/HuBO4QdZPmY?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="HuBO4QdZPmY" target="video-player"><img src="https://img.youtube.com/vi/HuBO4QdZPmY/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/fEUAsuF2XkY?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="fEUAsuF2XkY" target="video-player"><img src="https://img.youtube.com/vi/fEUAsuF2XkY/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/fFs_SS6LcEo?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="fFs_SS6LcEo" target="video-player"><img src="https://img.youtube.com/vi/fFs_SS6LcEo/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/T5EXH-r0738?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="T5EXH-r0738" target="video-player"><img src="https://img.youtube.com/vi/T5EXH-r0738/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/Nfy18lvADOA?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,1LZeV1gAizg,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="Nfy18lvADOA" target="video-player"><img src="https://img.youtube.com/vi/Nfy18lvADOA/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/1LZeV1gAizg?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,HzjOogDeZss&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="1LZeV1gAizg" target="video-player"><img src="https://img.youtube.com/vi/1LZeV1gAizg/1.jpg" /></a></li>
-				<li><a href="https://www.youtube.com/embed/HzjOogDeZss?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="HzjOogDeZss" target="video-player"><img src="https://img.youtube.com/vi/HzjOogDeZss/1.jpg" /></a></li>
+				<!--<li><a href="https://www.youtube.com/embed/To5oBOMAte8?enablejsapi=1&amp;playlist=0zsh2Qx2bbQ,sAspme4mzfg,W_lDC3VmgJs,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="To5oBOMAte8" target="video-player"><img src="https://img.youtube.com/vi/To5oBOMAte8/mqdefault.jpg" /></a></li>
+				<li><a href="https://www.youtube.com/embed/0zsh2Qx2bbQ?enablejsapi=1&amp;playlist=To5oBOMAte8,sAspme4mzfg,W_lDC3VmgJs,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="0zsh2Qx2bbQ" target="video-player"><img src="https://img.youtube.com/vi/0zsh2Qx2bbQ/mqdefault.jpg" /></a></li>
+				<li><a href="https://www.youtube.com/embed/W_lDC3VmgJs?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="W_lDC3VmgJs" target="video-player"><img src="https://img.youtube.com/vi/W_lDC3VmgJs/mqdefault.jpg" /></a></li>
+				<li><a href="https://www.youtube.com/embed/RKFoT6dVRiA?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,W_lDC3VmgJs,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="RKFoT6dVRiA" target="video-player"><img src="https://img.youtube.com/vi/RKFoT6dVRiA/mqdefault.jpg" /></a></li>
+				<li><a href="https://www.youtube.com/embed/HuBO4QdZPmY?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,W_lDC3VmgJs,RKFoT6dVRiA,fEUAsuF2XkY,fFs_SS6LcEo&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="HuBO4QdZPmY" target="video-player"><img src="https://img.youtube.com/vi/HuBO4QdZPmY/mqdefault.jpg" /></a></li>
+				<li><a href="https://www.youtube.com/embed/fEUAsuF2XkY?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,W_lDC3VmgJs,RKFoT6dVRiA,HuBO4QdZPmY,fFs_SS6LcEo&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="fEUAsuF2XkY" target="video-player"><img src="https://img.youtube.com/vi/fEUAsuF2XkY/mqdefault.jpg" /></a></li>
+				<li><a href="https://www.youtube.com/embed/fFs_SS6LcEo?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,W_lDC3VmgJs,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="fFs_SS6LcEo" target="video-player"><img src="https://img.youtube.com/vi/fFs_SS6LcEo/mqdefault.jpg" /></a></li>
+				<li><a href="https://www.youtube.com/embed/Nfy18lvADOA?enablejsapi=1&amp;playlist=To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,W_lDC3VmgJs,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" data-yt-video="Nfy18lvADOA" target="video-player"><img src="https://img.youtube.com/vi/Nfy18lvADOA/mqdefault.jpg" /></a></li>-->
 			</ul>
+			
+			<a href="#top" class="back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 		</nav>
 		
 		<div id="content">
-			<div id="header">
-				<p>Hello world! This is HTML5 Boilerplate. <a href="https://www.youtube.com/embed/DZGINaRUEkU" target="video-player">load another video</a> <a href="#menu">MENU</a></p>
+			<div id="about">
+				<div class="wrapper">
+					<h2>About <a href="#top" class="close"><i class="fa fa-times" aria-hidden="true"></i></a></h2>
+					<div class="content" id="about-content">
+						<!--<p>cGc Films is a Independent Film Production Company with a sole obligation and purpose: to express the world as we see it through Films and Movies.</p> 
+						<p>Hence our motto</p> <blockquote>"A view like no other" <br />…a motto that we incorporate in each and every single project we get involved in.</blockquote>
+						<p>We have been trusted to produce and cover, just about every single event that is related with live broadcasting. But what we really love, is going out, on the unknown challenges and making sense out of the chaos of every single project.</p>-->
+					</div>
+					<div class="content" id="clients-brands-content">
+						<h3>Brands and clients that cGcfilms is or has been employed by</h3>
+						<p class="clients-brands">
+							<a href="#" style="background-image:url(https://vignette3.wikia.nocookie.net/logopedia/images/d/df/Ant1-logo-black1.png/revision/latest?cb=20161023172716)"></a>
+							<a href="#" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/8/83/MEGA_CHANNEL.png)"></a>
+							<a href="#" style="background-image:url(http://2.bp.blogspot.com/--h6ZYI_YLNI/Vq28Jb2po1I/AAAAAAAAFRE/wy_3mBerHI0/s1600-r/ertlivetv-logo.png"></a>
+							<a href="#" style="background-image:url(https://upload.wikimedia.org/wikipedia/en/b/b6/ERT_Digital.png"></a>
+							<a href="#" style="background-image:url(http://www.star.gr/tv/Style%20Library/images/logo.png"></a>
+							<a href="#" style="background-image:url(https://upload.wikimedia.org/wikipedia/el/thumb/8/8f/MAD-TV-.svg/1200px-MAD-TV-.svg.png"></a>
+							<a href="#" style="background-image:url(https://upload.wikimedia.org/wikipedia/el/f/ff/Nova_blue_logo.png"></a>
+							<a href="#" style="background-image:url(https://upload.wikimedia.org/wikipedia/el/thumb/9/9c/OTE_TV_logo_2015.svg/1280px-OTE_TV_logo_2015.svg.png"></a>
+							<a href="#" style="background-image:url(https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Alpha_TV_logo.svg/1200px-Alpha_TV_logo.svg.png"></a>
+							<a href="#" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Eurosport_Logo_2015.svg/2000px-Eurosport_Logo_2015.svg.png"></a>
+							<a href="#" style="background-image:url(http://www.astartiproductions.gr/wp-content/uploads/2016/01/abcbc_logo.png"></a>
+							<a href="#" style="background-image:url(https://pbs.twimg.com/profile_images/476633883950075905/uMwmagIB.jpeg"></a>
+						</p>
+					</div>
+				</div>
 			</div>
 			
 			<div id="blog">
-				<h2>blog here...</h2>
-				<div class="article">
-					<h3>article 1 title</h3>
-					<div class="article-content">
-						<p>text...</p>
-						<p>text...</p>
-						<p>text...</p>
+				<div class="wrapper">
+					<h2>Blog <a href="#top" class="close"><i class="fa fa-times" aria-hidden="true"></i></a></h2>
+					<div class="article">
+						<div class="content">
+							<h3><span class="date">24.10.2013</span> The short Film: “Kassios Dream” Has Finally started its journey…</h3>
+							<div class="article-content">
+								<div class="embed-container-wrapper">
+									<div class="embed-container">
+										<iframe width="853" height="480" src="https://www.youtube.com/embed/02plMRIgkm4?showinfo=0" frameborder="0" allowfullscreen></iframe>
+									</div>
+								</div>
+								<p>So this is my life’s dream coming true. My first Short film!!! I just have to thank Manos Vakousis For his Imminence Support in every possible way Sissy Zournatzis For letting me taunt her and she still does!!! Giorgos Soras for being a real friend Nikos Gonidis you know I love ya man!!</p>
+								<p>John Arthur Patrik Areas For just showing me how a great of a person you are….I can never express my true gratitude &amp; words cant never either!!! Petros Tsanos ….You stood your ground man !!! There was not technical need you didn’t fill!!! My  great gaffer team: Elias Mallios, Panos ACS Razis, Stathis Caclamanis…  Thank you for every step of the way!!! Sotiris Grigorakakis For capturing in great stills and small vids every little back story !!! Our great make-up Artist Athina Demo!!! A special thanks goes out to Nikos Stasinopoulos And Nikos Karpodinis for their upright spirit !!! To my teacher Mr Elias Malihin For giving us as a team the time and space we needed to become a great team !!! But to say the truth I had someone to love me ….Katerina  you make me do great things!!! With out you I am lost !!! I Love you…</p>
+							</div>
+						</div>
+					</div>
+					<div class="article">
+						<div class="content">
+							<h3><span class="date">19.10.2013</span> Getting around of my self and doing the right thing</h3>
+							<div class="article-content">
+								<p>Και πόσα ακόμα μας είχε πει η Κυρία Βαγγελιώ… Της υποσχέθηκα, όμως…</p>
+								<p>And she had said even more that day… But she made me promise…</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="article">
-					<h3>article 1 title</h3>
-					<div class="article-content">
-						<p>text...</p>
-						<p>text...</p>
-						<p>text...</p>
-					</div>
-				</div>
-				<div class="article">
-					<h3>article 1 title</h3>
-					<div class="article-content">
-						<p>text...</p>
-						<p>text...</p>
-						<p>text...</p>
+			</div>
+		
+			<div id="contact">
+				<div class="wrapper">
+					<h2>Contact <a href="#top" class="close"><i class="fa fa-times" aria-hidden="true"></i></a></h2>
+					<div class="content">
+						<h3>GET IN TOUCH</h3>
+						<p>...</p> 
+						<p>TEL: +30 210 4523360 <br />MOBILE: +30 697 4858838 <br />WEBSITE: cgcfilms.com <br />E-MAIL: info@cgcfilms.com</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
 		<!-- Function onYouTubeIframeAPIReady() should be defined before loading https://www.youtube.com/iframe_api. -->
         <script src="js/main.js"></script>
