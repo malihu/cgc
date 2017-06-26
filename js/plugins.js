@@ -41,7 +41,7 @@
 				}else if(e.type==="load"){
 					$this.data("fixedScrollablePoll",setInterval(function(){
 						doc[1]=$(document).height()+$this[0].scrollHeight;
-						if(doc[1]!==doc[0]){
+						if(doc[1]!==doc[0] && restAPI_pages_ready && restAPI_posts_ready){
 							doc[0]=doc[1];
 							if(!started){
 								$this.scrollTop(0);

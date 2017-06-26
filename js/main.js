@@ -1,6 +1,6 @@
 /*var player,playerReady,videoList='To5oBOMAte8,0zsh2Qx2bbQ,sAspme4mzfg,W_lDC3VmgJs,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo',videos=videoList.split(","),
 	player1stVideo,player1stVideoList,restAPI_pages_ready,restAPI_videoList_ready;*/
-var player,playerReady,videoList,videos,player1stVideo,player1stVideoList,restAPI_pages_ready,restAPI_videoList_ready;
+var player,playerReady,videoList,videos,player1stVideo,player1stVideoList,restAPI_pages_ready,restAPI_videoList_ready,restAPI_posts_ready;
 
 (function($){
 	
@@ -13,6 +13,7 @@ var player,playerReady,videoList,videos,player1stVideo,player1stVideoList,restAP
 	$(function(){
 		
 		//rest api -----
+		//pages
 		$.ajax({
 			url:"http://cms.malihu.com/cgc/wp-json/wp/v2/pages", 
 			crossDomain:true,
@@ -49,14 +50,49 @@ var player,playerReady,videoList,videos,player1stVideo,player1stVideoList,restAP
 						//console.log(videoListMarkup);
 						$("#video-nav").html(videoListMarkup);
 						restAPI_videoList_ready=1;
+						$(window).trigger("resize").trigger("scroll");
 						// -----
 						
 					}
 					if(this.slug==="about"){
 						$("#about-content").html(this.content.rendered);
 					}
+					if(this.slug==="clients-brands"){
+						//console.log(this.acf.clients);
+						var _o="";
+						$.each(this.acf.clients,function(k,v){
+							//console.log( v.client_logo,v.client_link );
+							_o +="<a href='"+(v.client_link || "#")+"' style='background-image:url("+v.client_logo+"' target='_blank'></a>";
+						});
+						$("#clients-brands-content").html(this.content.rendered+"<p class='clients-brands'>"+_o+"</p>");
+					}
+					if(this.slug==="contact"){
+						$("#contact .content").html(this.content.rendered);
+					}
 				});
 				restAPI_pages_ready=1;
+			},
+			cache:false
+		});
+		//posts
+		$.ajax({
+			url:"http://cms.malihu.com/cgc/wp-json/wp/v2/posts", 
+			crossDomain:true,
+			type:"GET",
+			success:function(data){
+				var _o="";
+				$.each(data,function(){
+					//console.log( this.date );
+					//console.log( this.slug );
+					_o +="<div class='article'><div class='content'><h3><span class='date'>"+this.date.split("T")[0]+"</span> "+this.title.rendered+"</h3><div class='article-content'>"+this.content.rendered+"</div></div></div>";
+				});
+				$("#blog .wrapper").append(_o);
+				//responsive iframes
+				$("#blog .article-content iframe").each(function(){
+					//console.log( $(this) )
+					$(this).wrap("<div class='embed-container-wrapper'/>").wrap("<div class='embed-container'/>");
+				});
+				restAPI_posts_ready=1;
 			},
 			cache:false
 		});
