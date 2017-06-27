@@ -68,6 +68,9 @@ var player,playerReady,videoList,videos,player1stVideo,player1stVideoList,restAP
 					}
 					if(this.slug==="contact"){
 						$("#contact .content").html(this.content.rendered);
+						//social icons
+						$("a[href*='facebook.com/cGcFilmProductions']").html("<i class='fa fa-facebook-official' aria-hidden='true'></i>").addClass("social-icon");
+						$("a[href*='youtube.com/user/cGcFilmProduction']").html("<i class='fa fa-youtube-square' aria-hidden='true'></i>").addClass("social-icon");
 					}
 				});
 				restAPI_pages_ready=1;
@@ -82,16 +85,19 @@ var player,playerReady,videoList,videos,player1stVideo,player1stVideoList,restAP
 			success:function(data){
 				var _o="";
 				$.each(data,function(){
+					// replace youtube embeds -----
+					
+					// -----
 					//console.log( this.date );
 					//console.log( this.slug );
 					_o +="<div class='article'><div class='content'><h3><span class='date'>"+this.date.split("T")[0]+"</span> "+this.title.rendered+"</h3><div class='article-content'>"+this.content.rendered+"</div></div></div>";
 				});
 				$("#blog .wrapper").append(_o);
-				//responsive iframes
-				$("#blog .article-content iframe").each(function(){
+				//responsive iframes (no need. done in wp backend)
+				//$("#blog .article-content iframe").each(function(){
 					//console.log( $(this) )
-					$(this).wrap("<div class='embed-container-wrapper'/>").wrap("<div class='embed-container'/>");
-				});
+					//$(this).wrap("<div class='embed-container-wrapper'/>").wrap("<div class='embed-container'/>");
+				//});
 				restAPI_posts_ready=1;
 			},
 			cache:false
@@ -106,6 +112,12 @@ var player,playerReady,videoList,videos,player1stVideo,player1stVideoList,restAP
 		$("#site-nav a, a[href='#top']").mPageScroll2id({
 			live:false,
 			scrollSpeed:700
+		});
+		
+		$("#blog .wrapper").on("click",".lazy-yt-placeholder",function(e){
+			e.preventDefault();
+			var $this=$(this),ytid=$this.attr("data-ytid"),ytiframe="<iframe width='560' height='315' src='https://www.youtube.com/embed/"+ytid+"?autoplay=1' frameborder='0' allowfullscreen></iframe>";
+			$this.parent().html(ytiframe)
 		});
 		
 	});
@@ -136,7 +148,7 @@ function onYouTubeIframeAPIReady() {
 				playerVars: {
 					color: 'white',
 					showinfo: 0,
-					//autoplay: 1,
+					autoplay: 1,
 					rel: 0,
 					//0zsh2Qx2bbQ,sAspme4mzfg,Nln_ONLzehI,TF_32PYY-RM,1MgQ7K_1Fng,W_lDC3VmgJs,EFvLvmyv1iM,ohSMsnz0Qe4,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo,T5EXH-r0738,Nfy18lvADOA,1LZeV1gAizg,HzjOogDeZss
 					//'0zsh2Qx2bbQ,sAspme4mzfg,W_lDC3VmgJs,RKFoT6dVRiA,HuBO4QdZPmY,fEUAsuF2XkY,fFs_SS6LcEo'

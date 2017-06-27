@@ -259,6 +259,10 @@ a, #logo path{ transition: all .5s; }
 	color: #fff;
 }
 
+hr{
+	border-top: 1px dashed rgba(255,255,255,.3);
+}
+
 #contact{
 	margin-bottom: 40px;
 }
@@ -334,7 +338,47 @@ a, #logo path{ transition: all .5s; }
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
-	margin: 5px;
+	margin: 0 20px;
+	transition-duration: .3s;
+}
+
+.clients-brands > a:hover{
+	-webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1);
+}
+
+/* youtube placeholder */
+
+.lazy-yt-placeholder{
+	display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	text-align: center;
+	text-decoration: none;
+}
+
+.lazy-yt-placeholder i.fa{
+	display: block;
+    font-size: 6vw;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);
+	color: #e32227;
+	transition: all .3s;
+}
+
+.lazy-yt-placeholder:hover i.fa{
+	-webkit-transform: translateY(-50%) scale(1.2); -ms-transform: translateY(-50%) scale(1.2); transform: translateY(-50%) scale(1.2);
+}
+
+#contact .social-icon{
+	display: inline-block;
+	font-size: 300%;
+	margin: 0 20px 20px 0;
 }
 
 
